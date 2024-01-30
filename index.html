@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B21DCCN795</title>
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+
+            background-color: #323030ef;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: left;
+            color: #333;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #020202;
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 1.5em;
+            margin-bottom: 18px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+        }
+
+        ul {
+            margin-left: 25px;
+        }
+
+
+        .header {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .header h1 {
+            margin-right: 150px;
+            /* margin-left: 30px; */
+        }
+
+
+
+        .two-column-list {
+            columns: 2;
+            margin-left: 30px;
+            column-gap: 100px;
+        }
+
+        .two-column-list li {
+            line-height: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="popup" style="display: none;">
+        <div class="header">
+            <h1>Giới thiệu bản thân</h1>
+            <img src=".//img//Logo_PTIT_University.png" alt="">
+        </div>
+        <hr>
+        <div class="content">
+            <h2>Thông tin cá nhân</h2>
+
+            <ul class='two-column-list'>
+                <li><strong>Họ và tên:</strong> Hoàng Anh Vũ</li>
+                <li><strong>Mã sinh viên:</strong> B21DCCN795</li>
+                <li><strong>Lớp:</strong> D21CQCN03-B</li>
+                <li><strong>Nhóm:</strong> LTW-N2</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="content">
+            <h2>Sở thích</h2>
+            <ul>
+                <li><strong>Game</strong></li>
+                <li><strong>Bóng đá</strong></li>
+            </ul>
+        </div>
+        <hr />
+        <div class="content">
+            <h2>Ưu điểm</h2>
+            <ul>
+                <li><strong>Đẹp trai</strong></li>
+
+            </ul>
+        </div>
+        <hr />
+        <div class="content">
+            <h2>Link</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/hoanganhvu03"><strong>Facebook</strong> <i
+                            class="ti-facebook"></i></a></li>
+                <li><a href="https://github.com/hoanganhvu271"><strong>Github</strong> <i class="ti-github"></i></a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    function fadeIn(element) {
+        var op = 0.1;
+        element.style.opacity = 0;
+        element.style.display = 'block';
+        var timer = setInterval(function () {
+            if (op >= 1) {
+                clearInterval(timer);
+            }
+            element.style.opacity = op;
+            op += op * 0.2;
+        }, 20);
+    }
+
+    setTimeout(function () {
+        var popup = document.getElementById('popup');
+        fadeIn(popup);
+    }, 1500); 
+</script>
+
+</html>
